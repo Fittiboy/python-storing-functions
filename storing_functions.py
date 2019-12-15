@@ -14,10 +14,10 @@ def store_funclist(list):
         json.dump(list, funclist_file)
 
 def store(name):
-"""Stores a function with the name "on_name" in the "functions" directory.
-The body of the function is defined in "function_body.py".
-the "on_" prefix is used to easily find the functions later, after
-they've been imported"""
+    """Stores a function with the name "on_name" in the "functions" directory.
+    The body of the function is defined in "function_body.py".
+    the "on_" prefix is used to easily find the functions later, after
+    they've been imported"""
     with open(f'functions\\on_{name}.py', 'w') as function:
         function.write(f'def on_{name}():\n')
         body = funcbod.format(name=name)
@@ -29,7 +29,7 @@ they've been imported"""
     store_funclist(funclist)
 
 def remove(name):
-"""Does the opposite of store()"""
+    """Does the opposite of store()"""
     try:
         os.remove(f"functions\\on_{name}.py")
     except FileNotFoundError:
