@@ -1,4 +1,4 @@
-from store_functions import store, remove
+from storing_functions import store, remove
 
 def main():
     name = input("What is the name of the function you want to store/remove? ")
