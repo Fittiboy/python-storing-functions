@@ -8,5 +8,5 @@ is the solution.
 
 I created this mostly for learning purposes, but go and have fun with it!
 
-The `on_` notation stems from that original idea of using it in a chat bot. The bot I was workign on used that notation
-for functions that were to be called when certain events happen. It just stuck with me.
+The `on_` notation stems from that original idea of using it in a chat bot. The bot I was working on used that notation
+for functions that were to be called on certain events. It just stuck with me.
